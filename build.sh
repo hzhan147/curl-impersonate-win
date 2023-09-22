@@ -59,6 +59,7 @@ export NGHTTP2_PATH=nghttp2_stub
 export IDN2=1
 export LIBIDN2_PATH=idn2_stub
 export SSL=1
+export USE_HTTP2=1
 export OPENSSL_PATH=$PWD/boringssl
 export OPENSSL_LIBPATH=$PWD/boringssl/lib
 export OPENSSL_LIBS='-lssl -lcrypto'
