@@ -22,6 +22,8 @@ git checkout -- .
 git clean -f
 patchfile=../curl-impersonate/chrome/patches/curl-impersonate.patch
 patch -p1 < $patchfile
+patchfile=../curl-impersonate/chrome/patches/curl-custom-header-order.patch
+patch -p1 < $patchfile
 
 sed -i 's/-shared/-s -static -shared/g' lib/Makefile.m32
 sed -i 's/-static/-s -static/g' src/Makefile.m32
